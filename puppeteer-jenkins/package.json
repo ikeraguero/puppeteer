@@ -1,0 +1,19 @@
+{
+	"name": "puppeteer-jenkins",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"e2e-test": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/e2e.test.js",
+		"smoke-test": "node ./node_modules/mocha/bin/mocha --timeout=30000 ./tests/smoke.test.js",
+		"start-jenkins-server": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
+	},
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"chai": "^5.1.2",
+		"mocha": "^11.1.0",
+		"prettier": "^3.4.2",
+		"puppeteer": "^24.1.1"
+	}
+}
